@@ -127,7 +127,7 @@ body, html{
 
 .questionsList {
   background-color: #ebeced;
-  height: 90vh;
+  height: 85vh;
   display: none;
   padding: 2rem;
   overflow-y: scroll;
