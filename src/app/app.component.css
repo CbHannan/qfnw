@@ -468,7 +468,7 @@ body, html{
 }
 .fullScreen {
   width: 100% !important;
-  background-image: url("/assets/bg3.png");
+  background-image: url("/assets/bg2.png");
   padding-left: 3rem;
   padding-right:3rem;
 }
