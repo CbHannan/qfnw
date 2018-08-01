@@ -1,20 +1,284 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<body id="body">
+  <div id="mainWrap">
+    <div class="wrap" id="wrap">
 
+      <div class="container" id="header">
+        <div class="row">
+          <div class="mainHeader">
+            <span class="headerButton" id="openQuestions"(mouseover)="hoverOnSideOver()" (mouseleave)="hoverOnSideOff()" >
+              <span id="openQ" class="newQuestions" (click)="openQuestions()">Open Questions</span>
+              <i class="userIcon fas fa-question"></i>
+            </span>
+            <span>
+              <img src="/assets/QfnwLogo1.png" class="headerLogo"/>
+            </span>
+            <span id="newAccount" class="headerButton">
+              <span class="headerLogin">New Account</span>
+              <i class="userIcon fas fa-user"></i>
+            </span>
+          </div>
+
+        </div>
+      </div>
+      <div id="questionsTab" class="questionsTab">
+        <div id="openQTab" (click)="openQuestions()">
+          <i id="topChev" class="fas fa-chevron-right colorWhite fa-2x topExpand"></i>
+
+          <i id="bottomChev" class="fas fa-chevron-right  fa-2x bottomExpand"></i>
+        </div>
+        <div id="qList" class="container questionsList">
+          <div class="container">
+            <div id="qLHeader" class="display-1">
+              Questions for next week
+            </div>
+            <div id="qLHr">
+              <hr style="height:2px; color:black; background-color:black; margin-top:4rem;" />
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum?
+            </div>
+            <div class="questionFooter">
+              <div class="row">
+                <div class="voteCount">
+                  -'<span class="username">User1234</span>'
+                  <div class="qLUser">
+                    +4
+                    <i class="fas fa-plus-square darkBlue"></i>
+                    <i class="far fa-minus-square darkBlue"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum?
+            </div>
+            <div class="questionFooter">
+              <div class="row">
+                <div class="voteCount">
+                  -'<span class="username">User1234</span>'
+                  <div class="qLUser">
+                    +4
+                    <i class="fas fa-plus-square darkBlue"></i>
+                    <i class="far fa-minus-square darkBlue"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum?
+            </div>
+            <div class="questionFooter">
+              <div class="row">
+                <div class="voteCount">
+                  -'<span class="username">User1234</span>'
+                  <div class="qLUser">
+                    +4
+                    <i class="fas fa-plus-square darkBlue"></i>
+                    <i class="far fa-minus-square darkBlue"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum?
+            </div>
+            <div class="questionFooter">
+              <div class="row">
+                <div class="voteCount">
+                  -'<span class="username">User1234</span>'
+                  <div class="qLUser">
+                    +4
+                    <i class="fas fa-plus-square darkBlue"></i>
+                    <i class="far fa-minus-square darkBlue"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum?
+            </div>
+            <div class="questionFooter">
+              <div class="row">
+                <div class="voteCount">
+                  -'<span class="username">User1234</span>'
+                  <div class="qLUser">
+                    +4
+                    <i class="fas fa-plus-square darkBlue"></i>
+                    <i class="far fa-minus-square darkBlue"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum?
+            </div>
+            <div class="questionFooter">
+              <div class="row">
+                <div class="voteCount">
+                  -'<span class="username">User1234</span>'
+                  <div class="qLUser">
+                    +4
+                    <i class="fas fa-plus-square darkBlue"></i>
+                    <i class="far fa-minus-square darkBlue"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="backgroundDark" />
+          </div>
+        </div>
+      </div>
+      <div class="container" id="questionBlock">
+        <div class="mainQuestion">
+          From all of the questions posted on the left, what question do you think will be here this time next week?
+        </div>
+        <div class="mainName" id="mainName">
+          -'<span class="username">User1234</span>'
+        </div>
+      </div>
+      <div (click)="scrollDown()" class="container" id="replyScroll"><span><i class="fas fa-chevron-down colorWhite"></i></span> Replies <span><i class="fas fa-chevron-down colorWhite"></i></span></div>
+    </div>
+    <div id="replyPage" class="replyPage">
+        <div class="questionHeader" id="qHeader">
+          <div class="container">
+            <div class="row" id="qHRow">            
+              From all of the questions posted on the left, what question do you think will be here this time next week?           
+            </div>
+            <div class="row" id="qHLogo">
+              <img src="/assets/QfnwLogo1.png" id="qHeaderLogo"/>
+            </div>
+          </div>
+            </div>
+      <div class="sortBar" id="sortBar">
+          <div class="container sortContainer">
+            <div class="row">
+              <div class="sortBy sortBarButton">
+                <span id="sortByText" class="sortBarText">Sort By</span>
+                <i class="userIcon fas fa-chevron-down"></i>
+              </div>
+              <div class="writeComment sortBarButton">
+                <span id="writeCommentText" class="sortBarText">Reply</span>
+                <i class="userIcon fas fa-comments"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="replies">
+       
+        <div class="container">
+          <div class="card-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </div>
+          <div class="replyFooter">
+            <div class="row">
+              <div class="voteCount">
+                -'<span class="username">User1234</span>'
+                <div class="qLUser">
+                  7
+                  <i class="fas fa-star darkBlue"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="card-text ml-1 pl-1">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </div>
+          <div class="replyFooter ml-1 pl-1">
+            <div class="row">
+              <div class="voteCount">
+                -'<span class="username">User1234</span>'
+                <div class="qLUser">
+                  6
+                  <i class="fas fa-star darkBlue"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="card-text ml-2 pl-2">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </div>
+          <div class="replyFooter ml-2 pl-2">
+            <div class="row">
+              <div class="voteCount">
+                -'<span class="username">User1234</span>'
+                <div class="qLUser">
+                  6
+                  <i class="fas fa-star darkBlue"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="card-text ml-3 pl-3">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </div>
+          <div class="replyFooter ml-3 pl-3">
+            <div class="row">
+              <div class="voteCount">
+                -'<span class="username">User1234</span>'
+                <div class="qLUser">
+                  5
+                  <i class="fas fa-star darkBlue"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="card-text ml-2 pl-2">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </div>
+          <div class="replyFooter ml-2 pl-2">
+            <div class="row">
+              <div class="voteCount">
+                -'<span class="username">User1234</span>'
+                <div class="qLUser">
+                  4
+                  <i class="fas fa-star darkBlue"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="card-text ml-1 pl-1">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </div>
+          <div class="replyFooter ml-1 pl-1">
+            <div class="row">
+              <div class="voteCount">
+                -'<span class="username">User1234</span>'
+                <div class="qLUser">
+                  4
+                  <i class="fas fa-star darkBlue"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="card-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </div>
+          <div class="replyFooter">
+            <div class="row">
+              <div class="voteCount">
+                -'<span class="username">User1234</span>'
+                <div class="qLUser">
+                  3
+                  <i class="fas fa-star darkBlue"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
