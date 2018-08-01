@@ -72,7 +72,7 @@ body, html{
 #qHeaderLogo {
   width: 100px;
   margin-top: -.5rem;
-  transition:all .5s;
+  transition:all 1s;
   opacity: .1;
 }
 .opacity1{
@@ -127,7 +127,7 @@ body, html{
 
 .questionsList {
   background-color: #ebeced;
-  height: 85vh;
+  height: 90vh;
   display: none;
   padding: 2rem;
   overflow-y: scroll;
